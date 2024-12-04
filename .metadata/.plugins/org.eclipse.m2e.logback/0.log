@@ -11192,3 +11192,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.seleniumh
 2024-12-02 16:01:07,764 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-12-02 16:01:07,765 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\eclipse-workspace\Webdriver_Practice\src\test\resources
 2024-12-04 15:08:29,442 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-04 15:32:19,496 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
