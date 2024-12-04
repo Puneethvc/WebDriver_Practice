@@ -1,0 +1,17 @@
+package Arrays;
+
+public class Cherie {
+
+	public static void main(String[] args) {
+
+
+		String s ="Bangari";
+		String rev ="";
+		for(int i=<s.length()-1;i>=0;i--) {   // B
+			rev=rev+s.charAt(i);
+		}
+		System.out.println(rev);
+
+	}
+
+}

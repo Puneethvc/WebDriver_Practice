@@ -1,0 +1,32 @@
+package Arrays;
+
+public class SumOfArray {
+
+	public static void main(String[] args) {
+		
+//		int a[] = {1,2,3,4,5};
+//		int sum =0;
+//		
+//		for(int i=0;i<a.length;i++) {
+//			sum = a[i]+sum;
+//		}
+//		System.out.println("sum of array in ascending--"+ sum);
+//	for(int value : a) {
+//		sum = value+sum;
+//	}
+//	System.out.println("sum in enhanced loop --"+ sum);
+		
+		String s ="amm";
+		String rev="";
+		
+		for(int i=s.length()-1;i>=0;i--) {
+			rev=rev+s.charAt(i);
+		}
+//		System.out.println("rev "+rev);
+		if(s.equals(rev)) {
+			System.out.println("Palindrome");
+		}else
+			System.out.println("not");
+}
+}
+

@@ -1,0 +1,29 @@
+package Streams;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class MappPrograms {
+	public static void main(String[] args) {
+		
+		List<String> name = Arrays.asList("aa","bb","cc");
+		List<String> upper = new ArrayList <String>();
+		
+//		for(String data : name) {
+//			upper.add(data.toUpperCase());
+//		}
+		//using streams convert upper case
+		upper =name.stream().map(data -> data.toUpperCase()).collect(Collectors.toList());
+		System.out.println(upper);
+		
+		List<String> wordklength = Arrays.asList("hi","hello","lunch");
+		for(String a : wordklength)
+		{
+			System.out.println(a.length());
+		}
+	
+	}
+
+}

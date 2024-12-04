@@ -1,0 +1,30 @@
+package com_bank_TestCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com_bank_PageObjects.LogInpage;
+
+public class TC_LogInTest extends BaseClass{
+	
+	@Test
+	public void logInTest() {
+		
+		driver.get(url);
+		LogInpage lp = new LogInpage(driver);
+		lp.setUserName(userName);
+		lp.setPassword(password);
+		lp.clickSubmit();
+		
+		
+		if(driver.getTitle().equals("Guru99 Bank")) {
+			Assert.assertTrue(true);
+			System.out.println("Login success Full");
+		}else {
+			Assert.assertTrue(false);
+			System.out.println("Invalid Credentials to ligin");
+		}
+		
+	}
+
+}

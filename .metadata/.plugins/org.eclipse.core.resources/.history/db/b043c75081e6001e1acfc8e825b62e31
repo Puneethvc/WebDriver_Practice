@@ -1,0 +1,32 @@
+package Arrays;
+
+public class Cherie {
+
+	public static void main(String[] args) {
+
+/*
+		String s ="amma";
+		String rev ="";
+		for(int i=s.length()-1;i>=0;i--) {   // B
+			rev=rev+s.charAt(i);
+		}
+		if(s.equals(rev)) {
+			System.out.println("given string is palindrome --"+ rev);
+		}else
+			System.out.println("not plaindrome --");
+*/
+		
+		
+		
+		int num =121;
+		int rem,sum=0;
+		
+		while(num>0) {
+			rem=num%10;
+			sum=sum*10+rem;
+			num = num/10;
+		}
+		
+	}
+
+}

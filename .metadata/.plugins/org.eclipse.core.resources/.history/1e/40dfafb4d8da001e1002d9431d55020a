@@ -1,0 +1,23 @@
+package Arrays;
+
+public class HappyNumer {
+
+	public static void main(String[] args) {
+
+		int num=123;
+		
+		int n=num;
+		while(n>9) {
+			int sum=0;
+			while(n>0) {
+			int hn=n%10;
+			sum = sum+hn;
+			n=n/10;
+		}
+		n=sum;
+		}
+		System.out.println("Hii"+n);
+	}
+	
+
+}

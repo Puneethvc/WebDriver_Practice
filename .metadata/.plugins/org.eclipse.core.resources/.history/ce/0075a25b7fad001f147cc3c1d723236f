@@ -1,0 +1,455 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+
+import org.openqa.selenium.devtools.v122.systeminfo.SystemInfo;
+
+public class a {
+	
+//	static {
+//		int a=2;
+//		int b=4;
+//		int c=a+b;
+//		System.out.println(c);
+//	}
+		
+	public static void main(String[] args) {
+		
+		/*
+		// number of occurance in string
+		String s="puneeth";
+		HashSet<Character> set = new HashSet<Character>();
+		for(int i=0;i<s.length();i++){
+		set.add(s.charAt(i));
+		}
+		for(char ch : set){
+		int count=0;
+		for(int i=0;i<s.length();i++){
+		if(ch==s.charAt(i)){
+		count++;
+		}
+	}
+		if(count>=2) {
+		System.out.println(ch + "   "+count);
+	}
+		}
+		*/
+//----------------------------------------------------------------		
+		
+	/*
+	// palindrome number
+		int num=121;
+		int rem=0,sum=0;
+		int temp = num;
+		while(num >0) {
+			rem=num%10;
+			sum=sum*10+rem;
+			num=num/10;
+		}
+		if(temp==sum) {
+			System.out.println("num is palindrome number "+ temp);
+		}else {
+			System.out.println("nott palindrome number "+temp);
+		}	
+		*/
+//---------------------------------------------------------------------------------------------		
+		/*
+		// seperate number, character, and special charater	
+			String s="12ab#@";
+			String num="",spc="",ch="";
+			for(int i=0;i<s.length();i++) {
+				if(s.charAt(i)>='0' && s.charAt(i)<='9') {
+					num=num+s.charAt(i);
+				}else if(s.charAt(i)>='a' && s.charAt(i)<='z' || s.charAt(i)>='A' && s.charAt(i)<='Z') {
+					ch=ch+s.charAt(i);
+				}else {
+					spc=spc+s.charAt(i);
+				}
+			}
+			System.out.println(ch);
+			System.out.println(spc);
+			System.out.println(num);
+			*/
+	//---------------------------------------------------------------------------------------------------------	
+		/*
+		// prime number 
+		int a=9;
+		int b=2;
+		while(a>=1) {
+			if(a%b==0) {
+				break;
+			}else
+			{
+				b++;
+			}
+		}
+		if(a==b) {
+			System.out.println("prime");
+		}else {
+			System.out.println("not prime");
+		}
+		*/
+//---------------------------------------------------------------------------------------------		
+		/*
+		// reverse a variable without using length or third variable
+		String s ="abcd";
+		int count=0;
+		char ch [] = s.toCharArray();
+		for(char c : ch) {
+			count++;
+		}
+		for(int i=count-1;i>=0;i--) {
+			System.out.println(ch[i]);
+		}
+		or
+		String s="puni";
+		String rev="";
+		for(int i=s.length()-1;i>=0;i--) {
+			rev=rev+s.charAt(i);
+		}
+		System.out.println(rev);
+		*/
+//---------------------------------------------------------------------------------------------------------------		
+		/*
+		 //  fibobacci series
+		int a=0,b=1;
+		System.out.println(a +" "+b);
+		for(int i=0;i<5;i++) {
+			int c=a+b;
+			System.out.println(c);
+			a=b;b=c;
+		}
+		*/
+// --------------------------------------------------------------------------------		
+		/*
+		String s="abcd";
+		for(int i=0;i<s.length();i++){
+			System.out.println(s.charAt(i) +"  "+ i);
+		}
+		*/
+// -----------------------------------------------------------------------------------
+		/*
+		int a[]= {1,2,3,4,5,1,2};
+		for(int i=0;i<a.length;i++) {
+			for(int j=i+1;j<a.length;j++) {
+				if(a[i]<a[j]) {
+					int temp = a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+			System.out.println(a[i]);
+		}
+		
+//		int sum=0;
+//		for(int i=0;i<3;i++) {
+//			 sum=sum+a[i];
+//		}
+//		System.out.println(sum);
+		*/
+// ---------------------------------------------------------------------		
+		/*
+// swap a string 		 
+		String s="puneeth";
+		char ch []=s.toCharArray();
+		int temp=0;
+		for(int i=0;i<s.length();i++){
+			for(int j=i+1;j<s.length();j++) {
+				if(ch[i]>ch[j]) {
+				 temp =ch[i];
+				ch[i]=ch[j];
+				ch[j]=(char) temp;
+				}
+			}
+		}
+		for(int i=0;i<s.length();i++) {
+			System.out.println(ch[i]);
+		}
+		*/
+//---------------------------------------------------------------------------------------------------	
+		/*
+		// remove duplicates in array
+		 int a[] = {1, 1, 1, 2, 2, 3, 3, 4};
+	        ArrayList<Integer> al = new ArrayList<>();
+
+	        for (int i = 0; i < a.length; i++) {
+	            if (!al.contains(a[i])) {
+	                al.add(a[i]);
+	                int count = 1;
+	                for (int j = i+1; j< a.length; j++) {
+	                    if (a[i] == a[j]) {
+	                        count++;
+	                    }
+	                }
+	                System.out.println(a[i] + " - " + count);
+	            }
+	        }
+		*/
+		
+//-------------------------------------------------------------------------------------------------		
+		
+		/*
+		
+
+		*/
+//---------------------------------------------------------------------------------------------------------		
+		/*
+		 // print all char to upper case letters
+		String s = "puneeth";
+		for(int i=0;i<s.length();i++) {
+			if(s.charAt(i)>='a' && s.charAt(i)<='z') {
+				System.out.println((char)(s.charAt(i)-32));				
+			}
+		}
+		*/
+//---------------------------------------------------------------------------------------------------------		
+		/*
+		int a=5;
+		int b=6;
+		int c=0;
+		for(int i=0;i<b;i++) {
+			c=a*b;
+		}
+		System.out.println(c);
+	*/
+//---------------------------------------------------------------------------		
+		/*
+		// finacci series
+		int a=0;
+		int b=1;
+		System.out.println(a);
+		System.out.println(b);
+		for(int i=0;i<5;i++) {
+			int c=a+b;
+			a=b;
+			b=c;
+			System.out.println(c);
+		}
+		*/
+//------------------------------------------------------------------------		
+		/*
+		//prime number
+		int num=11;
+		int temp=num;
+		int sum=0;
+		while(num>0) {
+			int rem=num%10;
+			sum=sum*10+rem;
+			num=num/10;
+		}
+		if(sum==temp) {
+			System.out.println("num is prime  "+ temp);
+		}else {
+			System.out.println("num is not prime "+ temp);
+		}
+		*/
+		
+		/*
+		int a[]= {1,2,3};
+		int b[]= {1,2,7,4,5};
+		int c=a.length;
+		if(b.length>a.length) {
+			c=b.length;
+		}
+		for(int i=0;i<c;i++) {
+			try {
+			System.out.println(a[i]+b[i]);
+		}catch(Exception e) {
+		if(a.length>b.length) {
+			System.out.println(a[i]);
+		}else {
+			System.out.println(b[i]);
+		}
+	}
+		}
+		*/
+	
+		/*
+		int a[]= {1,2,3};
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a.length;j++) {
+				if(a[i]>a[j]) {
+					int temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+		}
+		for(int i=0;i<a.length;i++) {
+			System.out.println(a[i]);
+		}
+			*/
+		/*
+		String s="amma";
+		 String rev="";
+		 for(int i=s.length()-1;i>=0;i--) {
+			 rev=rev+s.charAt(i);
+		 }
+		 if(s.equals(rev)) {
+			 System.out.println("given string is palindrome-- "+s);
+		 }else
+		 {
+			 System.out.println("given string is not palidrome "+s);
+		 }
+		 */
+		
+		/*
+			String s="puni";
+
+	            String result = s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
+	            // Print the result
+	            System.out.println("Formatted string: " + result);
+			*/
+		/*
+		String s="puniiiiii";
+		LinkedHashSet<Character> set = new LinkedHashSet<>();
+		for(int i=0;i<s.length();i++) {
+			set.add(s.charAt(i));
+		}
+		for(char ch : set) {
+			  int count=0;
+			  
+	            for(int i=0;i<s.length();i++){
+	            	if(ch==s.charAt(i)) {
+	            		count++;
+	            	}
+	            }
+	        if(count>=1){
+	        	{
+	        		
+	            System.out.println("Expeced result--  " + count +" "+ ch);
+		}
+		}
+	}
+	*/
+	   
+//		 char[] s = {'a','b','c'};
+//	        for(int i=s.length-1;i>=0;i--)
+//	        {
+//	          System.out.print(s[i]+",");
+//	        }
+		
+		/*
+		String s []= {"aba","punee","puneeth"};
+		String maxele=s[0];
+		for(int i=0;i<s.length;i++) {
+			if(maxele.length() < s[i].length()) {
+				maxele =s[i];
+			}
+		}
+			for(int i=0;i<s.length;i++)
+			if(maxele.length() == s[i].length()) {
+				System.out.println(s[i]);
+			}
+		*/
+//-----------------------------------------------------------------------------------------------------------		
+		/*
+		// print max element in array
+		int a[]= {1,2,3,4,5};
+		int maxele =a[0];
+		for(int i=0;i<a.length;i++) {
+			if(a[i]>maxele) {
+				maxele=a[i];
+			}
+			
+			}
+		System.out.println(maxele);
+		
+		*/
+		/*
+		 // secound largest element in array
+		int a[]= {1,2,3,4,5};
+		int largest=0;
+		int sl=0;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]>largest) {
+				sl=largest;
+				largest=a[i];
+			}else if(a[i]>sl) {
+				sl=a[i];
+			}
+		}
+		System.out.println(sl);
+		
+		*/
+//---------------------------------------------------------------------------------------------------------		
+		/*
+		// seperate numbers and zeros
+		int a[]= {1,0,2,0,4,0,3};
+		int b[]=new int [a.length];
+		
+		int m=0;
+		int n=b.length-1;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==0) {
+				b[n]=a[i];
+				n--;
+			}else {
+				b[m]=a[i];
+				m++;
+			}
+		}
+		for(int i=0;i<a.length;i++) {
+			System.out.println(b[i]);
+		}
+		*/
+//----------------------------------------------------------------------------------------
+		/*
+	// reverse a string	
+		String s ="welcome to kolar";
+		String st[]=s.split(" ");
+		int count=0;
+		for(String a : st) {
+			count++;
+		}
+		for(int i=count-1;i>=0;i--) {
+			System.out.println(st[i]);
+		}
+		
+		*/
+//----------------------------------------------------------------------------------------		
+//	String a[]= {"a","aa","a","aa","c"};
+//	String temp="";
+//	for(int i=0;i<a.length;i++) {
+//		for(int j=i+1;j<a.length;j++) {
+//			if(a[i]==a[j]) {
+//				System.out.println("duplicates found "+a[i]);
+//			}
+//		}
+//	}
+//-------------------------------------------------------------------------------------------
+	
+	/*	
+	int a[]= {1,2,3,4};
+	int lenearelement=4;
+	boolean flag=true;
+	
+	for(int i=0;i<a.length;i++) {
+		
+	if(lenearelement == a[i]) {
+		System.out.println("linear element found "+a[i]);
+		flag=true;
+		break;
+	}
+	}
+	if(flag== false) {
+		System.out.println("linear element is not found");
+	}
+	*/
+//-----------------------------------------------------------------------------------------------	
+		
+		String s="i Love My Coading";
+		String st[]=s.split(" ");
+		for(int i=0;i<=st.length;i++) {
+			if(s.charAt(i)>='a' && s.charAt(i)<='z') {
+				System.out.println((char)(s.charAt(i)-32));
+			}
+		}
+		
+
+	}
+}
+	

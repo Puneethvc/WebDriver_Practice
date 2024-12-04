@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Admin\eclipse-workspace\CucumberHyridFrameWork\src\test\java\Hooks\MyHook.java"/>
+			<item value="C:\Users\Admin\eclipse-workspace\Webdriver_Practice\src\test\java\Practice\WebDriverWait.java"/>
+			<item value="C:\Users\Admin\eclipse-workspace\Programs"/>
+			<item value="C:\Users\Admin\eclipse-workspace\NopCommerce-Cucumber-Project\src\test\java\PageObjects\LogInPage.java"/>
+			<item value="C:\Users\Admin\eclipse-workspace"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="SDET_Pactice.SDET_PRACTICE"/>
+			<item value="Cucumber__Project_Practice.Cucumber__Project_Practice"/>
+			<item value="Cucumber.Project"/>
+			<item value="Cucumber_Dummy.Cucumber_Dummy"/>
+			<item value="Cucumber_Project.Cucumber_Project"/>
+			<item value="Cucumber_Project.Practice"/>
+		</list>
+		<list key="groupId">
+			<item value="SDET_Pactice"/>
+			<item value="Cucumber__Project_Practice"/>
+			<item value="Cucumber"/>
+			<item value="Cucumber_Dummy"/>
+			<item value="Cucumber_Project"/>
+		</list>
+		<list key="artifactId">
+			<item value="SDET_PRACTICE"/>
+			<item value="Cucumber__Project_Practice"/>
+			<item value="Project"/>
+			<item value="Cucumber_Dummy"/>
+			<item value="Cucumber_Project"/>
+			<item value="Practice"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="836"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+</section>

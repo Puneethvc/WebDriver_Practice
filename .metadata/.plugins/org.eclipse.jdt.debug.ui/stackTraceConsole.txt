@@ -1,0 +1,5 @@
+ // Ensure the Reports directory exists
+    File reportDir = new File(System.getProperty("user.dir") + "\\Reports\\");
+    if (!reportDir.exists()) {
+        reportDir.mkdirs();
+    }

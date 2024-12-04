@@ -1,0 +1,60 @@
+package Practice;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.time.Duration;
+import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BrokenLinks {
+
+	public static void main(String[] args)   {
+
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver =new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("http://www.deadlinkcity.com/");
+		
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println("no of broken links"+ links.size());
+		
+		int brokenlinkscount =0;
+		
+		for( WebElement elementvalue:links) {
+			String hrefvalue = elementvalue.getAttribute("href");
+			
+			if(hrefvalue == null || hrefvalue.isEmpty()){
+				System.out.println("href value is null or empty not possible to check");
+				continue;
+			}
+			
+			
+				URL linkurl = new URL(hrefvalue); // converted href value from string to url format
+				HttpsURLConnection conn = (HttpsURLConnection) linkurl.openConnection();// open connection to server
+				conn.connect(); // connect to sever and send request to server
+				
+				if(conn.getResponseCode()>=400) {
+					System.out.println(hrefvalue+"====> Broken link");
+					brokenlinkscount++;
+				}else{ 
+					System.out.println(hrefvalue+"====> not a broken link");
+				}
+			
+		}
+		System.out.println("No of broken links===> "+ brokenlinkscount);
+		
+	}
+
+}
